@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar{
+    position:absolute;
+    background-color: rgb(147, 120, 173);
+    font-family: 'Anton', sans-serif;
+    height: 100vh;
+    transition:transform 0.3s ease-in;
+}
+.sidebar nav{
+    padding: 45px;
+  
+}
+.sidebar nav li{
+    list-style: none;
+    font-size: 30px;
+    padding: 33px 0;
+}
+.sidebar nav li a{
+    text-decoration: none;
+    color: black;
+}
+.main{
+   background-color: beige;
+    width:90vw;
+   /* padding:15px;*/
+}
+.container{
+    display:flex;
+}
+.infoContainer{
+    background-color: rgb(202, 175, 202);
+    height: 95vh;
+    width: 80vw;
+    margin: 144px auto;
+    display: flex;
+    justify-content: space-around;
+}
+.stdpic img{
+    width: 450px;
+    height: 78vh;
+}
+.stdinfo{
+    font-size:16px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.hello{
+    font-size: 3em;
+}
+.name{
+     font-size: 3em;
+     font-weight: bold;
+     font-family:'Fira Sans',sans-serif; 
+}
+.about{
+    font-size: 2.5em;
+  
+}
+.moreabout{
+    font-size: 1em;
+    margin-top: 23px;
+    font-family:'Fira Sans',sans-serif; 
+
+}
+.buttons{
+ margin-top: 2.2em;
+ font-size: 16px;
+    
+}
+.btn{
+    padding: 9px 14px;
+    border-radius: 22px;
+    color:white;
+    background-color: rgb(126, 151, 175);
+    font-weight: bold;
+    font-size: 2em;
+    margin:3px 3px;
+    cursor: pointer;
+
+}
+.btn-sm{
+   
+    font-size:10px;
+    padding: 7px 13px;
+    margin: 10px 0;
+}
+.btn:hover{
+    background-color:white;
+    color: rgb(126, 151, 175);
+
+}
+.contactform{
+    padding: 0 34px;
+    font-family: 'Fira Sans',sans-serif;
+    margin: 0 88px;
+}
+.contactform h1{
+  font-family: 'Source Code Pro', monospace ;  
+
+}
+.contactform  form div{
+    padding: 10px 0;
+    display:flex;
+    flex-direction: column ;
+}
+.contactform  form div input{
+    /*width: 26vw;*/
+    border-radius: 5px;
+    margin: 6px 0 0 0;
+    padding: 3px;
+}
+.contactform form{
+   
+    margin: 0 40px;
+}
+
+#emailHelp{
+    font-size: 11px;
+    color: midnightblue;
+    margin: 0 5px;
+}
+#form-check{
+    flex-direction: row;
+}
+#form-check input{
+    width: 24px;
+    margin: 3px 0;
+
+}
+.expContainer{
+    margin:  88px;
+}
+.eitem{
+    margin: 20px;
+    font-family: 'Fira Sans',sans-serif;
+}
+.expContainer h1{
+    font-family: 'Fira Sans',sans-serif;
+    margin:23px;
+}
+.expContainer h3{
+    font-family: 'Fira Sans',sans-serif;
+    margin:23px;
+}
+
+.eitem p{
+    font-family: 'Source Code Pro', monospace ;  
+
+}
+.stdinfos{
+    margin-top: 10px;
+    font-size: 10px;
+  
+}
+.stdinfos h1{
+     font-family: 'Fira Sans',sans-serif;
+}
+.stdinfos p{
+    font-family: 'Source Code Pro', monospace ;
+}
+.stdinfos h2{
+  
+margin-top: 10px;
+font-family: 'Fira Sans',sans-serif;
+
+
+}
+
+.stdinfos h3{
+    margin-top: 10px;
+    font-family: 'Fira Sans',sans-serif;  
+
+}
+.skillcontainer{
+    padding: 12px;
+}
+.skillitem{
+    display:flex;
+}
+.skill{
+    width: 265px;
+    height: 10px;
+    margin-bottom: 25px;
+
+    background-color: rgb(21, 21, 182);
+    border: 2px solid black;
+}
+.t100{
+    width:265px;
+    background-color: aqua;
+    border: 2px solid black;
+
+}
+.t80{
+    width:200px;
+    background-color: yellow;
+    border: 2px solid black;
+}
+.t50{
+    width:125px;
+    background-color: palevioletred;
+    border: 2px solid black;
+
+}
+.t25{
+    width:80px;
+    background-color: aquamarine;
+    border: 2px solid black;
+}
+.sidebarGo{
+    transform: translate(-443px,0px);
+    position:absolute;
+}
+.hamburger{
+    position: absolute;
+    cursor: pointer;
+    top:8px;
+    left: 8px;
+    margin-top: 8px;
+}
+.cross{
+  margin-left: 190px;
+  margin-top: 5px;
+}
+
+@media only screen and (max-width: 1121px) {
+    body {
+     
+    }
+    .buttons{
+        font-size: 6px;
+    }
+    .stdinfos{
+        font-size: 10px;
+    }
+    .stdpic{
+        display: none;
+    }
+    .about, .expContainer , .contactform{
+        margin:  50px 8px;
+    }
+
+  }
